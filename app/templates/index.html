@@ -37,12 +37,13 @@
 
 
 
+
     </style>
 </head>
 <body>
 <div class="container">
     <div class="d-flex justify-content-center align-items-center mt-4">
-        <h2 style="font-weight: 1000; font-size: 48px;">Coronary Artery Disease CAD</h2>
+        <h2 style="font-weight: 1000; font-size: 48px;">Coronary Artery Disease Diagnosis</h2>
     </div>
     <form action="{{base_url}}/diagnosis" method="POST">
         <table class="table" style=" margin-top: 25px;">
@@ -63,14 +64,14 @@
             </tr>
             <tr>
                 <td><h4>Cholesterol</h4></td>
-                <td></td>
+                <td><p class="text_class"> (mg/dl)</p></td>
                 <td>
                     <input name="cholesterol" type="number" min="0" max="300" class="form-control input_class" required>
                 </td>
             </tr>
             <tr>
                 <td><h4>Heart Rate</h4></td>
-                <td><p class="text_class">Maximum heart rate in past 24 hours.</p></td>
+                <td><p class="text_class">Maximum heart rate in past 24 hours. (mmHg)</p></td>
                 <td>
                     <input name="maximum_heart_rate" type="number" min="0" max="200" class="form-control input_class"
                            required>
@@ -86,14 +87,14 @@
             </tr>
             <tr>
                 <td><h4>Blood Sugar</h4></td>
-                <td><p class="text_class">Amount of sugar found in the blood.</p></td>
+                <td><p class="text_class">Amount of sugar found in the blood.(mg/dl)</p></td>
                 <td>
                     <input name="blood_sugar" type="number" min="0" max="300" class="form-control input_class" required>
                 </td>
             </tr>
             <tr>
                 <td><h4>Family History</h4></td>
-                <td><p class="text_class">Number of family members who have suffered from heart diseases.</p></td>
+                <td><p class="text_class">Number of family members who have suffered from CAD.</p></td>
                 <td>
                     <select class="form-control input_class" name="family_history" required>
                         <option value="0"><h4>0</h4></option>
