@@ -1,0 +1,11 @@
+*/__pycache__
+*/*/__pycache__
+test.py
+
+.venv/
+venv/
+.idea/
+
+.env
+
+!Dockerfile
